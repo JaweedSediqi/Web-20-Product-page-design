@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dfisah.css">
+</head>
+
+<body>
+    <div class="containner">
+        <div class="prodect">
+            <div class="galary">
+                <img src="1.jpg" id="img">
+                <div class="controls">
+                    <span class="btn active"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                </div>
+            </div>
+            <div class="details">
+                <h1>KING OF KINGS</h1>
+                <h2>00.00$</h2>
+                <h3>0% OFF</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt beatae ipsam doloribus </p>
+                <form>
+                    <div class="size-select">
+                        <p>Size</p>
+                        <label for="small">
+                            <input type="radio" name="size" id="small">
+                            <span>S</span>
+                        </label>
+                        <label for="medium">
+                            <input type="radio" name="size" id="medium">
+                            <span>M</span>
+                        </label>
+                        <label for="larg">
+                            <input type="radio" name="size" id="larg">
+                            <span>L</span>
+                        </label>
+                        <label for="x-larg">
+                            <input type="radio" name="size" id="x-larg">
+                            <span>XLL</span>
+                        </label>
+                        <label for="xx-larg">
+                            <input type="radio" name="size" id="xx-larg">
+                            <span>XXLL</span>
+                        </label>
+                    </div>
+                    <div class="color-select">
+                        <p>Color</p>
+                        <label for="red">
+                            <input type="radio" id="red" name="color">
+                            <span class="color-1"></span>
+                        </label>
+                        <label for="green">
+                            <input type="radio" id="green" name="color">
+                            <span class="color-2"></span>
+                        </label>
+                        <label for="blue">
+                            <input type="radio" id="blue" name="color">
+                            <span class="color-3"></span>
+                        </label>
+                        <label for="pink">
+                            <input type="radio" id="pink" name="color">
+                            <span class="color-4"></span>
+                        </label>
+                    </div>
+                    <div class="quvatiiy-select">
+                        <p>Gvatity</p>
+                        <input type="number" value="1">
+                    </div>
+                    <button>By Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        const img=document.getElementById('img');
+        let btn=document.getElementsByClassName('btn');
+
+        btn[0].onclick=function(){
+            img.src="1.jpg";
+            for (let index = 0; index < btn.length; index++) {
+                btn[index].classList.remove('active');
+                
+            }
+            this.classList.add('active');
+        }
+        btn[1].onclick=function(){
+            img.src="2.jpg";
+            for (let index = 0; index < btn.length; index++) {
+                btn[index].classList.remove('active');
+                
+            }
+            this.classList.add('active');
+            
+        }
+        btn[2].onclick=function(){
+            img.src="3.jpg";
+            for (let index = 0; index < btn.length; index++) {
+                btn[index].classList.remove('active');
+                
+            }
+            this.classList.add('active');
+        }
+
+
+    </script>
+</body>
+
+</html>
